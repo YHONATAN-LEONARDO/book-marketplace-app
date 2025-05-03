@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 *,
 *::before,
 *::after {
@@ -37,7 +36,7 @@
   height: 2rem;
 }
 
-.boton{
+.boton {
   font-size: 1rem;
   display: flex;
   gap: 5px;
@@ -45,16 +44,67 @@
   padding: 6px;
   border-radius: 10px;
   background-color: #f0f0f0;
-
 }
-.boton:hover{
-  border: 1px solid ;
- border: 1px solid gold;
-
+.boton:hover {
+  border: 1px solid;
+  border: 1px solid gold;
 }
-.navbtn{
+.navbtn {
   display: flex;
   justify-content: space-between;
   padding: 8px;
+}
 
+.btn {
+  background-color: black;
+  color: white;
+  width: 60px;
+  padding: 4px;
+  border-radius: 7px;
+}
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 8px;
+}
+.carta {
+  padding: 9px;
+  background-color: #d3d3d3;
+  box-shadow: 0.3px 0.3px 2rem #666666;
+}
+.imagen {
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.titulo {
+  margin-top: 10px 0;
+
+  font-weight: 700;
+}
+.precio {
+  font-weight: 700;
+  font-size: 12px;
+}
+.entre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.por {
+  margin: 10px 0;
+  color: gray;
+  font-size: 12px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
