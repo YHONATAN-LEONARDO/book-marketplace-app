@@ -45,10 +45,12 @@
   border-radius: 10px;
   background-color: #f0f0f0;
 }
+
 .boton:hover {
   border: 1px solid;
   border: 1px solid gold;
 }
+
 .navbtn {
   display: flex;
   justify-content: space-between;
@@ -62,41 +64,48 @@
   padding: 4px;
   border-radius: 7px;
 }
+
 .contenedor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 8px;
 }
+
 .carta {
   padding: 9px;
   background-color: #d3d3d3;
   box-shadow: 0.3px 0.3px 2rem #666666;
 }
+
 .imagen {
   width: 95%;
   margin: 0 auto;
   border-radius: 10px;
 }
+
 .titulo {
   margin-top: 10px 0;
-
   font-weight: 700;
 }
+
 .precio {
   font-weight: 700;
   font-size: 12px;
 }
+
 .entre {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .por {
   margin: 10px 0;
   color: gray;
   font-size: 12px;
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -107,4 +116,62 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .navegador h2 {
+    font-size: 1.5rem;
+    width: 35rem;
+  }
+
+  .carta {
+    padding: 15px;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+  }
+
+  .precio {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .navegador {
+    padding: 2rem;
+  }
+
+  .navegador h2 {
+    font-size: 2rem;
+    width: 40rem;
+  }
+
+  .carta {
+    padding: 20px;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .precio {
+    font-size: 18px;
+  }
+
+  .footer {
+    padding: 2rem 3rem;
+  }
 }
